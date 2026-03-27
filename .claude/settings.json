@@ -1,0 +1,90 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/BayesIQCode/bayesiq-workspace/scripts/statusline.sh",
+    "padding": 2
+  },
+  "permissions": {
+    "allow": [
+      "Read",
+      "Read(__BIQ_ROOT__/**)",
+      "Write",
+      "Edit",
+      "Edit(__BIQ_ROOT__/**)",
+      "Glob",
+      "Glob(__BIQ_ROOT__/**)",
+      "Grep",
+      "Grep(__BIQ_ROOT__/**)",
+      "Bash",
+      "WebSearch",
+      "WebFetch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:docs.python.org)",
+      "WebFetch(domain:pypi.org)",
+      "WebFetch(domain:stackoverflow.com)"
+    ],
+    "deny": [
+      "Bash(osascript *)",
+      "Bash(security *)",
+      "Bash(launchctl *)",
+      "Bash(crontab *)",
+      "Bash(ln *)",
+      "Bash(open *)",
+      "Bash(scp *)",
+      "Bash(rsync *)",
+      "Bash(sftp *)",
+      "Bash(wget *)",
+      "Bash(nc *)",
+      "Bash(ncat *)",
+      "Bash(telnet *)",
+      "Bash(eval *)",
+      "Bash(exec *)",
+      "Bash(python -c *)",
+      "Bash(python3 -c *)",
+      "Bash(node -e *)",
+      "Bash(perl -e *)",
+      "Bash(ruby -e *)",
+      "Bash(bash -c *)",
+      "Bash(sh -c *)",
+      "Bash(zsh -c *)",
+      "Bash(shred *)",
+      "Bash(dd *)",
+      "Bash(mkfs *)",
+      "Bash(sudo *)",
+      "Bash(shutdown *)",
+      "Bash(reboot *)",
+      "Bash(kill *)",
+      "Bash(killall *)",
+      "Bash(pkill *)",
+      "Bash(npm install -g *)",
+      "Bash(yarn add *)",
+      "Bash(gem install *)",
+      "Bash(brew install *)",
+
+      "Read(**/.env*)",
+      "Read(**/*.pem)",
+      "Read(**/*.key)",
+      "Read(**/*secret*:!**/site-packages/**:!**/node_modules/**)",
+      "Read(**/*credential*:!**/storage/credentials/**:!**/site-packages/**:!**/node_modules/**)",
+      "Read(**/*password*:!**/argon2/*:!**/site-packages/**:!**/node_modules/**)",
+      "Read(**/*token*:!**/yaml/*:!**/site-packages/**:!**/node_modules/**)",
+
+      "Read(**/.claude/settings.json)",
+      "Read(**/.claude/settings.local.json)",
+      "Read(**/gh-config/hosts.yml)",
+      "Read(**/gh-config/hosts.yaml)",
+      "Read(**/.npmrc)",
+      "Read(**/.pypirc)",
+      "Read(**/.netrc)",
+      "Read(**/.docker/config.json)"
+    ]
+  },
+  "sandbox": {
+    "network": {
+      "allowLocalBinding": true
+    },
+    "excludedCommands": ["npx"]
+  }
+}

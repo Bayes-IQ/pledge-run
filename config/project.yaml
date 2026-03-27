@@ -1,0 +1,53 @@
+# pledge-run — project kernel for bayesiq pipeline targeting.
+# Controller repo (bayesiq) runs pipeline against this repo checkout.
+schema_version: 1
+
+repo:
+  root: ".."  # relative to this config file
+
+commands:
+  test: "python -m pytest tests/ -v"
+  lint: "ruff check ."
+  invariants: null
+  plan_conformance: null
+  test_timeout: 60
+
+context:
+  max_total_bytes: 50000
+  max_bytes_per_file: 20000
+  max_tree_depth: 3
+  max_output_chars: 15000
+  excluded_prefixes:
+    - ".git/"
+    - ".artifacts/"
+    - ".next/"
+    - ".claude/"
+    - "node_modules/"
+    - ".venv/"
+  sensitive_patterns:
+    - ".env"
+    - ".env.local"
+
+docs:
+  roadmap: "docs/ai/ROADMAP.md"
+  arch_state: "docs/ai/ARCH_STATE.md"
+  plan_template: "docs/ai/pr_markdown_plans/_TEMPLATE.md"
+  pr_plans_dir: "docs/ai/pr_markdown_plans/"
+
+critic:
+  pr_categories:
+    - convention_violation
+    - missing_wiring
+    - config_inconsistency
+    - test_gap
+    - security
+    - other
+  roadmap_categories:
+    - missing_dependency
+    - scope_creep
+    - unclear_exit_criteria
+    - ordering_risk
+  escalation_rules:
+    always_blocking:
+      - missing_dependency
+      - scope_creep

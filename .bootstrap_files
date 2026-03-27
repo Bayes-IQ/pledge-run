@@ -1,0 +1,5 @@
+# pledge-run — bootstrap context manifest
+# One relative path per line. Order matters — most important first.
+# Used by: bayesiq-workspace/scripts/bootstrap_context.sh
+config/project.yaml
+README.md
