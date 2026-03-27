@@ -6,8 +6,8 @@ repo:
   root: ".."  # relative to this config file
 
 commands:
-  test: "python -m pytest tests/ -v"
-  lint: "ruff check ."
+  test: ["-m", "pytest", "tests/", "-v"]
+  lint: null
   invariants: null
   plan_conformance: null
   test_timeout: 60
