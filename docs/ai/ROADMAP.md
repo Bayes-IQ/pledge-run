@@ -5,7 +5,7 @@
 
 ---
 
-## Phase 1: Foundation (Days 1-2) — 2026-03-27 to 2026-03-28
+## Phase 1 — Foundation (Days 1-2) — 2026-03-27 to 2026-03-28
 
 Scaffold the project, establish the tech stack, and get a deployable skeleton running.
 
@@ -34,7 +34,7 @@ Scaffold the project, establish the tech stack, and get a deployable skeleton ru
 
 ---
 
-## Phase 2: Core Domain (Days 3-4) — 2026-03-29 to 2026-03-30
+## Phase 2 — Core Domain (Days 3-4) — 2026-03-29 to 2026-03-30
 
 Build the goal and pledge domain — the heart of the product.
 
@@ -64,7 +64,7 @@ Build the goal and pledge domain — the heart of the product.
 
 ---
 
-## Phase 3: Integrations (Days 5-7) — 2026-03-31 to 2026-04-02
+## Phase 3 — Integrations (Days 5-7) — 2026-03-31 to 2026-04-02
 
 Connect to Apple Health and Stripe — the two external dependencies that make the app real.
 
@@ -98,7 +98,7 @@ Connect to Apple Health and Stripe — the two external dependencies that make t
 
 ---
 
-## Phase 4: Evaluation Engine (Days 8-9) — 2026-04-03 to 2026-04-04
+## Phase 4 — Evaluation Engine (Days 8-9) — 2026-04-03 to 2026-04-04
 
 The automated brain that checks goals and resolves pledges.
 
@@ -129,7 +129,7 @@ The automated brain that checks goals and resolves pledges.
 
 ---
 
-## Phase 5: Polish and Delight (Days 10-11) — 2026-04-05 to 2026-04-06
+## Phase 5 — Polish and Delight (Days 10-11) — 2026-04-05 to 2026-04-06
 
 Make it feel premium. This is what turns a prototype into something that wows.
 
@@ -159,7 +159,7 @@ Make it feel premium. This is what turns a prototype into something that wows.
 
 ---
 
-## Phase 6: Launch Prep (Days 12-14) — 2026-04-07 to 2026-04-10
+## Phase 6 — Launch Prep (Days 12-14) — 2026-04-07 to 2026-04-10
 
 Deploy, seed demo data, record the demo.
 
