@@ -1,0 +1,24 @@
+name: 'Integrations'
+status: planned
+notes: 'Apple HealthKit + Stripe + Activity feed. Days 5-7.'
+prs:
+  7:
+    title: 'Activity Model + Ingestion API'
+    status: planned
+    depends_on: [4]
+  8:
+    title: 'Apple HealthKit Swift Bridge'
+    status: planned
+    depends_on: [7]
+  9:
+    title: 'Stripe Backend — SetupIntent + Webhooks'
+    status: planned
+    depends_on: [2]
+  10:
+    title: 'Stripe Frontend + Connect + PaymentIntent'
+    status: planned
+    depends_on: [9]
+  11:
+    title: 'Activity Feed + Manual Logging UI'
+    status: planned
+    depends_on: [7]

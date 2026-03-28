@@ -4,3 +4,16 @@
 .venv/
 requirements.lock
 requirements-dev.lock
+
+# App
+.env
+.env.local
+__pycache__/
+*.pyc
+node_modules/
+.next/
+backend/.venv/
+*.egg-info/
+dist/
+build/
+.DS_Store

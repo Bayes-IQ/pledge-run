@@ -1,0 +1,16 @@
+name: 'Launch Prep'
+status: planned
+notes: 'Deploy, demo mode, landing page. Days 12-14.'
+prs:
+  18:
+    title: 'Deployment'
+    status: planned
+    depends_on: [17]
+  19:
+    title: 'Demo Mode + Seed Data'
+    status: planned
+    depends_on: [18]
+  20:
+    title: 'Landing Page'
+    status: planned
+    depends_on: [18, 19]

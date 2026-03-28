@@ -1,0 +1,16 @@
+name: 'Evaluation Engine'
+status: planned
+notes: 'Goal evaluation, charge execution, results dashboard. Days 8-9.'
+prs:
+  12:
+    title: 'Goal Evaluation Service'
+    status: planned
+    depends_on: [7, 10]
+  13:
+    title: 'Charge Execution + Donation Flow'
+    status: planned
+    depends_on: [12]
+  14:
+    title: 'Results Dashboard'
+    status: planned
+    depends_on: [12, 13]

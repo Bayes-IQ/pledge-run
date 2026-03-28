@@ -1,0 +1,15 @@
+schema_version: 2
+current_phase: '1'
+phases:
+  - file: phase_1.yaml
+    key: 1
+  - file: phase_2.yaml
+    key: 2
+  - file: phase_3.yaml
+    key: 3
+  - file: phase_4.yaml
+    key: 4
+  - file: phase_5.yaml
+    key: 5
+  - file: phase_6.yaml
+    key: 6

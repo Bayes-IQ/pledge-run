@@ -1,0 +1,16 @@
+name: 'Core Domain'
+status: planned
+notes: 'Goal + pledge domain, creation wizard. Days 3-4.'
+prs:
+  4:
+    title: 'Goal Model + CRUD API'
+    status: planned
+    depends_on: [2]
+  5:
+    title: 'Pledge + Charity Models + Seed Data'
+    status: planned
+    depends_on: [4]
+  6:
+    title: 'Goal Creation Wizard UI'
+    status: planned
+    depends_on: [4, 5]

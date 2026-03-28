@@ -1,0 +1,16 @@
+name: 'Polish and Delight'
+status: planned
+notes: 'Onboarding, animations, notifications. Days 10-11.'
+prs:
+  15:
+    title: 'Onboarding Flow'
+    status: planned
+    depends_on: [14]
+  16:
+    title: 'Dashboard Polish + Animations'
+    status: planned
+    depends_on: [15]
+  17:
+    title: 'Notification System'
+    status: planned
+    depends_on: [15, 16]
